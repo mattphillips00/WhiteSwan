@@ -1,6 +1,7 @@
 package org.example;
 
 public class Race {
+    private String meetingName;
     private String meetingId;
     private String raceNumber;
     private String raceTime;
@@ -28,12 +29,12 @@ public class Race {
         this.raceNumber = raceNumber;
     }
 
-    public String getMeetingId() {
-        return meetingId;
+    public String getMeetingName() {
+        return meetingName;
     }
 
-    public void setMeetingId(String meetingId) {
-        this.meetingId = meetingId;
+    public void setMeetingName(String meetingName) {
+        this.meetingName = meetingName;
     }
 
     public String getUrl() {
@@ -44,13 +45,21 @@ public class Race {
         this.url = url;
     }
 
+    public String getMeetingId() {
+        return meetingId;
+    }
+
+    public void setMeetingId(String meetingId) {
+        this.meetingId = meetingId;
+    }
+
     @Override
     public String toString() {
         return "Race{" +
-                "meetingId='" + meetingId + '\'' +
-                ", raceNumber='" + raceNumber + '\'' +
-                ", raceTime='" + raceTime + '\'' +
-                ", url='" + url + '\'' +
-                '}';
+            "meetingName='" + meetingName + '\'' +
+            ", raceNumber='" + raceNumber + '\'' +
+            ", raceTime='" + raceTime + '\'' +
+            ", url='" + url + '\'' +
+            '}';
     }
 }
